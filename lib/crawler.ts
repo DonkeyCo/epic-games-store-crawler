@@ -1,4 +1,3 @@
-import { exception } from "console";
 import { gql, request} from "graphql-request";
 import * as fetch from "node-fetch";
 
