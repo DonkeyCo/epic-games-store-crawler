@@ -10,5 +10,47 @@ export type CatalogVar = {
     sortDir?: string,
     start?: number,
     tag?: string,
-    withPrice?: Boolean
+    withPrice?: Boolean,
+}
+
+export type FreeCatalogVar = {
+    allowCountries: string,
+    country: string,
+    keywords?: string,
+    locale: string,
+    releaseDate?: string,
+    sortBy?: string,
+    sortDir?: string,
+    start?: number,
+    tag?: string,
+    withPrice?: Boolean,
+}
+
+export type News = {
+    "jcr:isCheckedOut": Boolean,
+    _title: string,
+    _noIndex: Boolean,
+    _images_: String[],
+    "jcr:baseVersion": string,
+    _urlPattern: string,
+    lastModified: string,
+    _locale: string,
+    _id: string,
+    trending: Boolean,
+    noTopImage: Boolean,
+    contentTypeSticky: Boolean,
+    author: string,
+    enableLightbox: false,
+    _type: string,
+    shareImage: string,
+    title: string,
+    content: string,
+    trendingImage: string,
+    cat: string,
+    sticky: Boolean,
+    short: string,
+    date: string,
+    slug: string,
+    url: string,
+    urlPattern: string,
 }
