@@ -34,11 +34,11 @@ enum Query {
     } 
   `,
   CatalogTags = `
-    query catalogTags($namespace: String, $locale: String) {
+    query catalogTags($namespace: String, $locale: String, $start: Int, $count: Int) {
       Catalog {
-        tags (namespace: $namespace, locale: $locale, start: 0, count: 999) {
+        tags (namespace: $namespace, locale: $locale, start: $start, count: $count) {
           elements {
-            aliases id name referenceCount status price
+            aliases id name referenceCount status
           }
         }
       }
