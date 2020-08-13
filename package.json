@@ -1,0 +1,35 @@
+{
+  "name": "epic-games-store-crawler",
+  "version": "0.1.1",
+  "description": "A crawler to retrieve store data from the Epic Games store",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:gedhub/epic-games-store-crawler.git",
+  "author": "DonkeyCo <duc.vongoc01@gmail.com>",
+  "license": "GPL-3.0",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "epic games",
+    "crawler",
+    "epic",
+    "games",
+    "store",
+    "epic games store"
+  ],
+  "scripts": {
+    "clean-build": "rm -rf ./dist/*",
+    "build": "yarn run clean-build && tsc -p ./tsconfig.json",
+    "prepublish": "yarn run build"
+  },
+  "dependencies": {
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.2",
+    "typescript": "^3.4.3"
+  }
+}

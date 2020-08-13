@@ -1,0 +1,63 @@
+export type CatalogVar = {
+    allowCountries: String,
+    category: String,
+    count: Number,
+    country: String,
+    keywords?: String,
+    locale: String,
+    releaseDate?: String,
+    sortBy?: String,
+    sortDir?: String,
+    start?: Number,
+    tag?: String,
+    withPrice?: Boolean,
+}
+
+export type FreeCatalogVar = {
+    allowCountries: String,
+    country: String,
+    keywords?: String,
+    locale: String,
+    releaseDate?: String,
+    sortBy?: String,
+    sortDir?: String,
+    start?: Number,
+    tag?: String,
+    withPrice?: Boolean,
+}
+
+export type News = {
+    "jcr:isCheckedOut": Boolean,
+    _title: String,
+    _noIndex: Boolean,
+    _images_: String[],
+    "jcr:baseVersion": String,
+    _urlPattern: String,
+    lastModified: String,
+    _locale: String,
+    _id: String,
+    trending: Boolean,
+    noTopImage: Boolean,
+    contentTypeSticky: Boolean,
+    author: String,
+    enableLightbox: false,
+    _type: String,
+    shareImage: String,
+    title: String,
+    content: String,
+    trendingImage: String,
+    cat: String,
+    sticky: Boolean,
+    short: String,
+    date: String,
+    slug: String,
+    url: String,
+    urlPattern: String,
+}
+
+export type CatalogTags = {
+    namespace: String,
+    locale: String,
+    start: Number,
+    count: Number,
+}
