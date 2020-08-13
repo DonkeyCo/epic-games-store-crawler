@@ -1,8 +1,9 @@
 {
   "name": "epic-games-store-crawler",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A crawler to retrieve store data from the Epic Games store",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:gedhub/epic-games-store-crawler.git",
   "author": "DonkeyCo <duc.vongoc01@gmail.com>",
   "license": "MIT",
