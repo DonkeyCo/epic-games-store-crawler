@@ -16,7 +16,7 @@ const Crawler = function() {};
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler } from 'epic-games-store-crawler';
  * 
  * Crawler.getGames({
  *   allowedCountries: 'DE',
@@ -39,7 +39,7 @@ Crawler.getGames = async (variables: CatalogVar) => {
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler }from 'epic-games-store-crawler';
  * 
  * Crawler.getFreeGames({
  *   allowCountries: 'DE',
@@ -79,7 +79,7 @@ Crawler.getNews = async (locale: String, limit?: number):Promise<News> => {
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler } from 'epic-games-store-crawler';
  * 
  * Crawler.getCatalogTags({
  *   namespace: 'epic',
