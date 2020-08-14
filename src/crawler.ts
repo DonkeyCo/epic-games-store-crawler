@@ -18,7 +18,7 @@ const Crawler = function() {};
  * 
  * import { Crawler } from 'epic-games-store-crawler';
  * 
- * Crawler.getGames({
+ * Crawler.getItems({
  *   allowedCountries: 'DE',
  *   category: 'games/edition/base|bundles/games|editors',
  *   count: 30,
@@ -28,7 +28,7 @@ const Crawler = function() {};
  * 
  * @returns catalog items
  */
-Crawler.getGames = async (variables: CatalogVar) => {
+Crawler.getItems = async (variables: CatalogVar) => {
     const catalog = await request(Constant.GQL_BASE, gql`${Query.Catalog}`, variables);
     return catalog;
 };
