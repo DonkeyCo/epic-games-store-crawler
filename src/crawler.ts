@@ -16,9 +16,9 @@ const Crawler = function() {};
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler } from 'epic-games-store-crawler';
  * 
- * Crawler.getGames({
+ * Crawler.getItems({
  *   allowedCountries: 'DE',
  *   category: 'games/edition/base|bundles/games|editors',
  *   count: 30,
@@ -28,7 +28,7 @@ const Crawler = function() {};
  * 
  * @returns catalog items
  */
-Crawler.getGames = async (variables: CatalogVar) => {
+Crawler.getItems = async (variables: CatalogVar) => {
     const catalog = await request(Constant.GQL_BASE, gql`${Query.Catalog}`, variables);
     return catalog;
 };
@@ -39,7 +39,7 @@ Crawler.getGames = async (variables: CatalogVar) => {
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler }from 'epic-games-store-crawler';
  * 
  * Crawler.getFreeGames({
  *   allowCountries: 'DE',
@@ -79,7 +79,7 @@ Crawler.getNews = async (locale: String, limit?: number):Promise<News> => {
  * 
  * @example
  * 
- * import Crawler from 'epic-games-store-crawler';
+ * import { Crawler } from 'epic-games-store-crawler';
  * 
  * Crawler.getCatalogTags({
  *   namespace: 'epic',
