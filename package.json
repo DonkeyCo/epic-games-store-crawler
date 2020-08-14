@@ -1,6 +1,6 @@
 {
   "name": "epic-games-store-crawler",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A crawler to retrieve store data from the Epic Games store",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
   "scripts": {
     "clean-build": "rm -rf ./dist/*",
     "build": "yarn run clean-build && tsc -p ./tsconfig.json",
-    "prepublish": "yarn run build"
+    "prepare": "yarn run build"
   },
   "dependencies": {
     "graphql": "^15.3.0",
