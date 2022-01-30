@@ -50,8 +50,10 @@ Crawler.getItems = async (variables: CatalogVar) => {
  * @returns free catalog items
  */
 Crawler.getFreeGames = async (variables: FreeCatalogVar) => {
-    const freeGames = await request(Constant.GQL_BASE, gql`${Query.FreeCatalog}`, variables);
-    return freeGames;
+    let oVariables = (variables as any);
+    oVariables.category = 'freegames';
+    let catalogVariables : CatalogVar = oVariables;
+    return await request(Constant.GQL_BASE, gql`${Query.Catalog}`, catalogVariables);
 }
 
 /**
