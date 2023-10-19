@@ -32,7 +32,7 @@ Use files in `dist` folder for coding
 To use ***epic-games-store-crawler*** you have to import it: \
 ```js
 // with require
-var egsCrawler = require('epic-games-store-crawler)';
+var egsCrawler = require('epic-games-store-crawler');
 var crawler = egsCrawler.Crawler;
 ```
 
